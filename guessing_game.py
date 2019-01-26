@@ -6,10 +6,9 @@ Project 1 - Number Guessing Game
 
 import random
 import sys
-highest_score=7
+highscore=[]
 
 def start_game():
-    #1. Display an intro/welcome message to the player.
     print ("------------------------------")
     print("Welcome to Number Guessing Game!")
     print ("------------------------------")
@@ -30,16 +29,25 @@ def start_game():
             elif guess < random_no :
                 print("It is higher!")
             elif guess==random_no :
-                print "You got it! It took you",tries,"tries"
+                print ("You got it! It took you {}".format(tries))
                 ans = input("Would you like play again ? [y]es /[n]o: ")
-                ans = ans.lower()
+                try:
+                    ans = ans.lower()
+                    if ans!='n'or ans!='y' :
+                        raise ValueError ("Please enter 'y' or 'n'.")
+                
                 if ans=="n":
                     print("Closing the game see you next time . BYE!!!!")
                     sys.exit()
                 elif ans=="y":
-                    print " Highest Score is :",highest_score
+                    highscore.append(tries)
+                    highscore.sort()
+                    print("Get a score under {} to beat the highscore!".format(highscore[0]))
                     tries=0
                     random_no = random.randint(1,10)
-                    continue         
+                    continue      
+
+
+                   
 if __name__ == '__main__':
     start_game()
