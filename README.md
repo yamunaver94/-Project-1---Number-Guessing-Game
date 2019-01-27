@@ -24,6 +24,7 @@
  ```
 
 ## How to use?
+* Clone or download the repository.
 * Open command prompt go to the location of the project and run command to play the game.
   ```
   python3 guessing_game.py
