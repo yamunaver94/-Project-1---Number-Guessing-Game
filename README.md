@@ -1,22 +1,35 @@
 # Python Web Development Techdegree
+
 # Project 1 - Number Guessing Game
+> Number Guessing Game is a console game
+
 ### I am aiming for exceeds :D
 
-## Run The Project
-
-* Make sure you have python installed on your local machine run the following commands.
-```
- sudo apt-get update 
+## Installing / Getting started 
+### For Linux Users
+* Make sure you have python3.6 installed on your local machine.You can check the version of Python 3 by following command
+  ```
+  python -V
+  ```
+ * To install Python 3.6 open the terminal and run command to add the PPA:
  ```
- ```
- sudo apt-get install python3.6
+ sudo add-apt-repository ppa:jonathonf/python-3.6
  ```
  
-* If it is already installed check the version.
-```
-python -V
-```
-* To run the project type the following command on the command prompt.
-```
-python guessing_game.py
-```
+* Then check updates and install Python 3.6 via commands:
+ ```
+ sudo apt-get update
+
+ sudo apt-get install python3.6
+ ```
+
+## How to use?
+* Open command prompt go to the location of the project and run command to play the game.
+  ```
+  python3 guessing_game.py
+  ```
+## Steps To Play 
+
+* Guess a number from 1 - 10.
+* Once the correct answer is guessed you will see how many tries it took.
+* Once the correct answer is guessed you can play again or end the game by entering 'y' or 'n'
