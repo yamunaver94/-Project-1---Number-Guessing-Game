@@ -1,5 +1,3 @@
-# Python Web Development Techdegree
-
 # Project 1 - Number Guessing Game
 > Number Guessing Game is a console game
 
